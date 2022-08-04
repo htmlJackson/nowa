@@ -1,0 +1,46 @@
+.header {}
+
+.header__top {
+  padding-top: 25px;
+  border-bottom: 1px solid $light;
+  padding-bottom: 25px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__bottom {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $light;
+}
+
+.header__btn {
+  margin-left: 35px;
+}
+
+.header__mail {
+  display: flex;
+  margin-left: 30px;
+}
+
+.header__call {
+  display: flex;
+  margin-left: 30px;
+}
+
+.header__phone {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $gray;
+}

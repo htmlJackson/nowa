@@ -1,0 +1,88 @@
+.form {
+  background-image: url(../img/form.png);
+  background-size: cover;
+}
+
+.form__container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form__title {
+  width: 785px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.form__block {
+  display: flex;
+}
+
+.form__input {
+  width: 250px;
+  max-width: 100%;
+  margin-right: 30px;
+
+  &:focus-within {
+    outline: none;
+  }
+}
+
+.form__agreement {
+  width: 880px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form__submit {
+  padding: 18px 38px;
+}
+
+.form__agreement-text {
+  display: flex;
+  align-items: center;
+  color: $white;
+  font-weight: 500;
+  font-size: 14px;
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+
+  a {
+    border-bottom: 1px solid $white;
+    margin: 0 3px;
+  }
+}
+
+.form__checkbox:checked ~ .form__agreement-text::before {
+  background-image: url(../img/check.svg);
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

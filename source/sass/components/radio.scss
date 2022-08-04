@@ -1,0 +1,32 @@
+.radio {
+  
+  cursor: pointer;
+
+  input {
+    @include visually-hidden();
+  }
+
+  .radio__text {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid #96A3A9;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  input:checked ~ .radio__text {
+    color: $red;
+
+    &::before {
+      border-color: $red;
+      box-shadow: 0 0 0 6px $red inset;
+    }
+  }
+}

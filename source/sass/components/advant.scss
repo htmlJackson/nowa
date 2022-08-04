@@ -1,0 +1,21 @@
+.advant__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 155px);
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.advant__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 155px;
+  margin-bottom: 35px;
+  background-color: $graybg;
+  border-radius: 50%;
+}
+
+.advant__text {
+  text-align: center;
+}

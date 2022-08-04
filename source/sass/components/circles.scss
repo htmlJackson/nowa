@@ -1,0 +1,41 @@
+.circles {
+  padding: 100px 0;
+}
+
+.circles__list {
+
+}
+
+.circles__row {
+  display: flex;
+  justify-content: space-between;
+  & + & {
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+}
+
+.circles__item {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  &:hover {
+    color: $red;
+    text-decoration: underline;
+  }
+}
+
+.circles__img {
+  margin-bottom: 30px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.circles__item:hover .circles__img {
+  box-shadow: 0 0 0px 7px #db1d1e, 0 0 0px 12px #fff, 0 0 0px 15px rgba(219, 29, 30, 0.5);
+}

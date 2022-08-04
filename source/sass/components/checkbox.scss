@@ -1,0 +1,32 @@
+.checkbox {
+  
+  cursor: pointer;
+
+  input {
+    @include visually-hidden();
+  }
+
+  .checkbox__text {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border: 1px solid #96A3A9;
+      margin-right: 10px;
+    }
+  }
+
+  input:checked ~ .checkbox__text {
+    color: $red;
+
+    &::before {
+      background-image: url(../../img/check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

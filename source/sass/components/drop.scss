@@ -1,0 +1,60 @@
+.drop {
+
+}
+
+.drop__btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #828282;
+  background: $white;
+  border: 1px solid #C9D2CB;
+  border-radius: 16px;
+  padding: 17px;
+
+  svg {
+    transform: rotate(180deg);
+    margin-left: 10px;
+    transition: all 0.3s;
+  }
+
+  &.opened svg {
+    transform: rotate(0);
+  }
+
+}
+
+.drop__content {
+  display: none;
+
+  margin-top: 10px;
+  position: absolute;
+  background: $white;
+  border: 1px solid #C9D2CB;
+  border-radius: 16px;
+  padding: 17px;
+  font-weight: 500;
+
+  &.opened {
+    display: inline-flex;
+    
+  }
+}
+
+.drop__list {
+  @include reset-list();
+}
+
+.drop__item {
+  margin-bottom: 17px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

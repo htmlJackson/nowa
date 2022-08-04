@@ -1,0 +1,36 @@
+.category__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 271px);
+  row-gap: 50px;
+  justify-content: space-between;
+
+  .card {
+    width: 275px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .card__content {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  .card__hidden-block {
+    display: none;
+  }
+}
+
+.category__nav {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.category__item {
+  margin-right: 45px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

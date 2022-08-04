@@ -1,0 +1,34 @@
+.repair__block {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.repair__item {
+  position: relative;
+  width: 707px;
+  height: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repair__pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.repair__text {
+  width: 330px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: $white;
+}

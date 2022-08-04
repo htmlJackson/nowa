@@ -1,0 +1,92 @@
+.card {
+  transition: all 0.3s;
+  width: 315px;
+  &:hover {
+    box-shadow: 1px 1px 29px rgba(44, 61, 71, 0.1);
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+ 
+  padding: 18px 18px 30px;
+  border: 1px solid #FFFDFD;
+  border-radius: 5px;
+  background: $white;
+}
+
+.card:hover .card__content {
+  border-radius: 5px 5px 0 0;
+}
+
+.card__hidden-block {
+  transition: all 0.3s;
+  padding: 0 18px 30px;
+  border-radius: 0 0 5px 5px;
+  background: $white;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .card__hidden-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__btn {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.card__name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.card__art {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.card__price {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__anchor {
+  margin-left: 10px;
+  color: $red;
+  text-decoration: underline;
+}
+
+.reviews__stars img {
+  margin-right: 3px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card__colors {
+  margin-top: 20px;
+  display: flex;
+
+}
+
+.card__color {
+  width: 29px;
+  height: 29px;
+  border-radius: 5px;
+  margin-right: 9px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,35 @@
+.breadcrumbs {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
+}
+
+.breadcrumbs__list {
+  @include reset-list();
+  display: flex;
+}
+
+.breadcrumbs__list a {
+  display: flex;
+  align-items: center;
+  &::after {
+    content: '/';
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  &.current {
+    color: $red;
+    border-bottom: 1px solid $red;
+
+    &::after {
+      display: none;
+    }
+  }
+
+}

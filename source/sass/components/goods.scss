@@ -1,0 +1,56 @@
+.goods {
+  background: url(../../img/goods.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.goods__ul {
+  @include reset-list();
+
+  li {
+    margin-bottom: 25px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+
+    span {
+      border-bottom: 1px solid;
+      transition: all 0.3s;
+    }
+
+    &::after {
+      content: '';
+      width: 24px;
+      height: 12px;
+      margin-left: 25px;
+      background-image: url(../../img/red-arrow.svg);
+      background-repeat: no-repeat;
+      transition: all 0.3s;
+
+      opacity: 0;
+    }
+
+    &:hover {
+      color: $red;
+      span {
+        border-color: transparent;
+      }
+      &::after {
+        opacity: 1;
+      }
+
+    }
+  }
+}
+
+.goods__content {
+  display: flex;
+  justify-content: space-between;
+}

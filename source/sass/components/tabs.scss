@@ -1,0 +1,22 @@
+.tabs {
+  @include reset-list();
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+
+  li {
+    margin-right: 35px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.tabs__anchor {
+  transition: all 0.3s;
+  &:hover {
+    color: $red;
+  }
+}

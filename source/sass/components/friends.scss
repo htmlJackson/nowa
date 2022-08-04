@@ -1,0 +1,26 @@
+.friends__slider {
+
+  &.swiper {
+    padding-bottom: 50px;
+  }
+
+  .swiper-wrapper {
+    height: 220px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $red;
+  }
+
+} 

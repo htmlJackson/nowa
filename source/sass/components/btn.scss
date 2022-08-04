@@ -1,0 +1,38 @@
+.btn {
+  @include reset-btn;
+
+  display: inline-flex;
+  justify-content: center;
+  padding: 18px 53px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: $white;
+  
+  border-radius: 3px;
+  background-color: $red;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $red-hover;
+  }
+  &:active {
+    background-color: $red-active;
+  }
+}
+
+.btn_view_outline {
+  color: $red;
+  border: 1px solid $red;
+  background-color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: $red-hover;
+  }
+  &:active {
+    color: $white;
+    background-color: $red-active;
+  }
+}
