@@ -1,0 +1,47 @@
+.accordeon {
+
+  .accordeon__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .accordeon__btn {
+    @include reset-btn();
+    display: flex;
+    font-size: 18px;
+    stroke: $white;
+    fill: transparent;
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    .icon_more {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+  }
+
+
+  .accordeon__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  &.opened {
+
+    .accordeon__btn {
+      transform: rotate(180deg);
+    }
+
+    .accordeon__content {
+      transition: max-height 0.6s ease-in-out;
+      max-height: 1500px;
+    }
+  }
+}

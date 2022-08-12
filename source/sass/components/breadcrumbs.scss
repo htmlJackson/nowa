@@ -1,9 +1,13 @@
 .breadcrumbs {
-  margin-top: 15px;
-  margin-bottom: 40px;
+  padding-top: 15px;
+  padding-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
-  color: #828282;
+  color: $graydark;
+
+  &_bg_gray {
+    background-color: $graybg;
+  }
 }
 
 .breadcrumbs__list {
@@ -18,7 +22,7 @@
     content: '/';
     font-weight: 400;
     font-size: 14px;
-    color: #828282;
+    color: $graydark;
     margin-left: 5px;
     margin-right: 5px;
   }
