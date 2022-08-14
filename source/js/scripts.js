@@ -2,19 +2,29 @@
 
 
 const swiper = new Swiper('.friends__slider.swiper', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   pagination: {
     el: ".friends__slider .swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 4
+    },
   }
 });
 
 const swiper2 = new Swiper('.cards-list.swiper', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.cards-list .swiper-button-next',
     prevEl: '.cards-list .swiper-button-prev',
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 4
+    },
+  }
 });
 
 const swiper3 = new Swiper('.rails__slider.swiper', {
@@ -59,3 +69,14 @@ const accordeonToggle = document.querySelectorAll('.accordeon__title');
 accordeonToggle.forEach(acc => acc.addEventListener('click', () => {
   acc.parentElement.classList.toggle('opened');
 }));
+
+
+// Открыть - закрыть меню в шапке //
+var pageHeader = document.querySelector('.header');
+var navToggle = document.querySelector('.header__toggle');
+
+pageHeader.classList.remove('header--nojs');
+
+navToggle.addEventListener('click', function() {
+    pageHeader.classList.toggle('header--opened');
+});

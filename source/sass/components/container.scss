@@ -3,4 +3,23 @@
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (max-width: $breakpoint-md) {
+    width: $breakpoint-md;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    width: $breakpoint-sm;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    min-width: 320px;
+  }
+}
+
+.container--full-width {
+  @media (max-width: $breakpoint-sm) {
+    padding: 0;
+    width: 100%;
+  }
 }

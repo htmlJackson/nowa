@@ -3,6 +3,15 @@
   display: grid;
   grid-template-columns: repeat(6, 210px);
   justify-content: space-between;
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(3, 210px);
+    justify-content: space-around;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    grid-template-columns: repeat(1, 210px);
+  }
 }
 
 .way__circle {
@@ -28,8 +37,11 @@
     top: 50%;
     transform: translateY(-50%);
     right: -110px;
-  }
 
+    @media (max-width: $breakpoint-sm) {
+      right: -90px;
+    }
+  }
 }
 
 .way__item {
@@ -51,4 +63,15 @@
 .way__text_red {
   color: $red;
   font-weight: 600;
+
+  @media (max-width: $breakpoint-xs) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.way .h2 {
+  @media (max-width: $breakpoint-xs) {
+    font-size: 21px;
+  }
 }

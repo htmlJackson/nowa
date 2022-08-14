@@ -16,6 +16,13 @@
     border: none;
     border-radius: 50%;
     margin-top: -50px;
+
+    @media (max-width: $breakpoint-xs) {
+      width: 59px;
+      height: 59px;
+      margin-top: -40px;
+    }
+
     &::after {
       font-size: 14px;
       color: $white;
@@ -27,10 +34,18 @@
   }
 }
 
-
 .cards-list_grid {
   display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: space-between;
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-around;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    grid-template-columns: 1fr;
+  }
 }
 

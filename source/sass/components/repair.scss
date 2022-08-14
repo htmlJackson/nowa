@@ -2,8 +2,11 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-}
 
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
 
 .repair__item {
   position: relative;
@@ -12,6 +15,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $breakpoint-sm) {
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    height: 203px;
+    width: 320px;
+    margin-bottom: 20px;
+  }
 }
 
 .repair__pic {
@@ -31,4 +45,10 @@
   font-size: 32px;
   line-height: 38px;
   color: $white;
+
+  @media (max-width: $breakpoint-xs) {
+    font-size: 21px;
+    line-height: 29px;
+    max-width: 250px;
+  }
 }

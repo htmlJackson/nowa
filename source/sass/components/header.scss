@@ -1,9 +1,22 @@
-.header {}
+.header {
+  @media (max-width: $breakpoint-sm) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background-color: $white;
+  }
+}
 
 .header__top {
   padding-top: 25px;
   border-bottom: 1px solid $light;
   padding-bottom: 25px;
+
+  @media (max-width: $breakpoint-xs) {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 .header__container {
@@ -21,15 +34,29 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid $light;
+
+  
+  @media (max-width: $breakpoint-sm) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .header__btn {
   margin-left: 35px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .header__mail {
   display: flex;
   margin-left: 30px;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .header__call {
@@ -43,4 +70,40 @@
   line-height: 22px;
   text-transform: uppercase;
   color: $gray;
+
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.header__toggle {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 33px;
+  height: 33px;
+  margin-left: 20px;
+  margin-right: 11px;
+  display: none;
+
+  @media (max-width: $breakpoint-sm) {
+    display: block;
+  }
+}
+
+.header--nojs {
+  position: static;
+}
+
+.header--opened .nav {
+  display: block;
+}
+
+.header--nojs .header__nav {
+  display: block;
+}
+
+.header--nojs .header__toggle {
+  display: none;
 }
