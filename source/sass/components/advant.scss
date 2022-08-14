@@ -1,8 +1,22 @@
+.advant {
+  @media (max-width: $breakpoint-xs) {
+    padding-top: 13px;
+  }
+}
+
 .advant__grid {
   display: grid;
   grid-template-columns: repeat(5, 155px);
   justify-content: space-around;
   margin-top: 45px;
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(3, 155px);
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    grid-template-columns: repeat(1, 155px);
+  }
 }
 
 .advant__circle {
@@ -18,4 +32,14 @@
 
 .advant__text {
   text-align: center;
+}
+
+.advant .h2 {
+  @media (max-width: $breakpoint-xs) {
+    font-size: 21px;
+    line-height: 26px;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

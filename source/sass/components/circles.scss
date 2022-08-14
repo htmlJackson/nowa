@@ -1,5 +1,10 @@
 .circles {
   padding: 100px 0;
+
+  @media (max-width: $breakpoint-xs) {
+    padding-top: 75px;
+    padding-bottom: 10px;
+  }
 }
 
 .circles__list {
@@ -13,6 +18,10 @@
     margin-top: 50px;
     justify-content: space-around;
   }
+
+  @media (max-width: $breakpoint-xs) {
+    flex-wrap: wrap;
+  }
 }
 
 .circles__item {
@@ -24,6 +33,14 @@
   font-size: 18px;
   line-height: 24px;
 
+  @media (max-width: $breakpoint-xs) {
+    font-size: 16px;
+    text-decoration: underline;
+    color: $red;
+    width: 130px;
+    margin-bottom: 35px;
+  }
+
   &:hover {
     color: $red;
     text-decoration: underline;
@@ -34,6 +51,12 @@
   margin-bottom: 30px;
   border-radius: 50%;
   transition: all 0.3s;
+
+  @media (max-width: $breakpoint-xs) {
+    margin-bottom: 22px;
+    width: 115px;
+    height: 115px;
+  }
 }
 
 .circles__item:hover .circles__img {

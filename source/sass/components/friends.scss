@@ -1,11 +1,23 @@
+.friends {
+  padding-bottom: 20px;
+}
+
 .friends__slider {
 
   &.swiper {
     padding-bottom: 50px;
+
+    @media (max-width: $breakpoint-xs) {
+      padding-bottom: 25px;
+    }
   }
 
   .swiper-wrapper {
     height: 220px;
+
+    @media (max-width: $breakpoint-xs) {
+      height: 70px;
+    }
   }
 
   .swiper-slide {
@@ -17,10 +29,21 @@
   .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
+
+    @media (max-width: $breakpoint-xs) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet-active {
     background-color: $red;
   }
 
-} 
+}
+
+.friends .h2 {
+  @media (max-width: $breakpoint-xs) {
+    font-size: 21px;
+    margin-top: 0;
+  }
+}

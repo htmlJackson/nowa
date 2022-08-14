@@ -22,6 +22,11 @@
   display: flex;
   margin-left: 190px;
 
+  @media (max-width: $breakpoint-xs) {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
   a.active {
     font-weight: 600;
   }
@@ -35,6 +40,23 @@
 
   li {
     margin-bottom: 5px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+.footer__ul--hide-mobile li:nth-child(1) {
+  @media (max-width: $breakpoint-xs) {
+    display: none;
+  }
+}
+
+.footer__top-logo {
+  @media (max-width: $breakpoint-xs) {
+    display: none;
   }
 }
 
@@ -50,6 +72,12 @@
   text-align: center;
 
   color: $graydark;
+}
+
+.footer__contacts {
+  @media (max-width: $breakpoint-xs) {
+    width: 100%;
+  }
 }
 
 .footer__messengers {
@@ -92,4 +120,8 @@
 .footer__copy {
   margin-top: 18px;
   margin-bottom: 18px;
+
+  @media (max-width: $breakpoint-xs) {
+    max-width: 180px;
+  }
 }

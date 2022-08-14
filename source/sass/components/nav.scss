@@ -1,16 +1,36 @@
 .nav {
-
+  @media (max-width: $breakpoint-sm) {
+    display: none;
+  }
 }
 
 .nav__ul {
   display: flex;
   @include reset-list;
+
+  @media (max-width: $breakpoint-md) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
 }
 
 .nav__li {
   margin-right: 60px;
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid $light;
   }
 }
 
@@ -23,5 +43,10 @@
 
   &:hover {
     color: $red;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    display: flex;
+    justify-content: center;
   }
 }
