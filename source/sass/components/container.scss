@@ -5,11 +5,11 @@
   margin: 0 auto;
 
   @media (max-width: $breakpoint-md) {
-    width: $breakpoint-md;
+    width: $container-md;
   }
 
   @media (max-width: $breakpoint-sm) {
-    width: $breakpoint-sm;
+    width: $container-sm;
   }
 
   @media (max-width: $breakpoint-xs) {

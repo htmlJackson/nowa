@@ -45,6 +45,18 @@ a {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 50px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    margin-bottom: 15px;
+  }
 }
 
 .h3 {
@@ -58,19 +70,6 @@ a {
   font-weight: 700;
 }
 
-.section {
-  padding-top: 40px;
-  padding-bottom: 90px;
-}
-
-// .section_gray {
-//   background-color: $graybg;
-// }
-
-.section_pt_0 {
-  padding-top: 0;
-}
-
 .text-left {
   text-align: left;
 }
@@ -82,4 +81,15 @@ a {
 
 .visually-hidden {
   @include visually-hidden();
+}
+
+.logo {
+  display: flex;
+  @media (max-width: $breakpoint-sm) {
+    max-width: 200px;
+  }
+}
+
+.main {
+
 }

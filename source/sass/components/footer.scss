@@ -22,6 +22,10 @@
   display: flex;
   margin-left: 190px;
 
+  @media (max-width: $breakpoint-sm) {
+    margin-left: auto;
+  }
+
   @media (max-width: $breakpoint-xs) {
     margin-left: 0;
     flex-wrap: wrap;
@@ -36,6 +40,10 @@
   margin-right: 45px;
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    margin-right: 25px;
   }
 
   li {
@@ -72,11 +80,24 @@
   text-align: center;
 
   color: $graydark;
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 45px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    margin-top: 25px;
+  }
 }
 
 .footer__contacts {
   @media (max-width: $breakpoint-xs) {
     width: 100%;
+    margin-top: 15px;
   }
 }
 

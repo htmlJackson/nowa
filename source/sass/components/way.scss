@@ -7,6 +7,7 @@
   @media (max-width: $breakpoint-sm) {
     grid-template-columns: repeat(3, 210px);
     justify-content: space-around;
+    row-gap: 25px;
   }
 
   @media (max-width: $breakpoint-xs) {
@@ -27,6 +28,10 @@
 
   box-shadow: 0 0 0px 12px #fff, 0 0 0px 14px rgba(219, 29, 30, 1);
 
+  @media (max-width: $breakpoint-xs) {
+    position: static;
+  }
+
   
   &::after {
     content: '';
@@ -41,6 +46,13 @@
     @media (max-width: $breakpoint-sm) {
       right: -90px;
     }
+
+    @media (max-width: $breakpoint-xs) {
+      right: auto;
+      top: auto;
+      bottom: 40px;
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -49,6 +61,24 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    &:nth-child(3) .way__circle {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+
+  @media (max-width: $breakpoint-xs) {
+    position: relative;
+    padding-bottom: 60px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .way__item:last-of-type .way__circle::after {

@@ -28,7 +28,6 @@
   }
 
   @media (max-width: $breakpoint-sm) {
-    padding: 10px;
     width: 100%;
     border-bottom: 1px solid $light;
   }
@@ -48,5 +47,6 @@
   @media (max-width: $breakpoint-sm) {
     display: flex;
     justify-content: center;
+    padding: 20px;
   }
 }

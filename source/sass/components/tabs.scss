@@ -6,8 +6,25 @@
   line-height: 24px;
   margin-bottom: 40px;
 
+  @media (max-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    row-gap: 15px;
+  }
+  
+
+  @media (max-width: $breakpoint-xs) {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+
   li {
     margin-right: 35px;
+
+    @media (max-width: $breakpoint-sm) {
+      margin-right: 15px;
+    }
+
     &:last-of-type {
       margin-right: 0;
     }

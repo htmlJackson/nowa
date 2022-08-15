@@ -4,11 +4,33 @@
   row-gap: 50px;
   justify-content: space-between;
 
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(4, 271px);
+    row-gap: 25px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 271px);
+    gap: 25px;
+    justify-content: center;
+  }
+
+  
+  @media (max-width: $breakpoint-xs) {
+    grid-template-columns: 100%;
+    padding: 0 15px;
+  }
+
   .card {
     width: 275px;
 
     &:hover {
       box-shadow: none;
+    }
+
+      
+    @media (max-width: $breakpoint-xs) {
+      width: 100%;
     }
   }
 
@@ -26,11 +48,41 @@
 .category__nav {
   margin-bottom: 50px;
   display: flex;
+
+  
+  @media (max-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 15px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .drop__btn {
+    @media (max-width: $breakpoint-xs) {
+
+      width: 100%;
+
+      svg {
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 .category__item {
   margin-right: 45px;
   &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: $breakpoint-md) {
     margin-right: 0;
   }
 }

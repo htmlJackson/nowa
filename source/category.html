@@ -22,11 +22,11 @@
     <title>Nowamebel</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--nojs">
       <div class="header__top">
         <div class="container header__container">
           <a href="/">  
-            <img src="img/logo.svg" alt="nowamebel">
+            <img src="img/logo.svg" alt="nowamebel" class="logo">
           </a>
 
           <div class="header__right">
@@ -43,12 +43,20 @@
             </a>
 
             <a href="#" target="_blank" class="btn header__btn">Оставить заявку</a>
+            <button class="header__toggle" type="button">
+              <svg class="header__toggle-icon header__toggle-icon--burger" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31.7109 15.2109H1.28906C0.577113 15.2109 0 15.7881 0 16.5C0 17.2119 0.577113 17.7891 1.28906 17.7891H31.7109C32.4229 17.7891 33 17.2119 33 16.5C33 15.7881 32.4229 15.2109 31.7109 15.2109Z" fill="#DF393A"/>
+                <path d="M31.7109 4.89844H1.28906C0.577113 4.89844 0 5.47555 0 6.1875C0 6.89945 0.577113 7.47656 1.28906 7.47656H31.7109C32.4229 7.47656 33 6.89945 33 6.1875C33 5.47555 32.4229 4.89844 31.7109 4.89844Z" fill="#DF393A"/>
+                <path d="M31.7109 25.5234H1.28906C0.577113 25.5234 0 26.1006 0 26.8125C0 27.5244 0.577113 28.1016 1.28906 28.1016H31.7109C32.4229 28.1016 33 27.5244 33 26.8125C33 26.1006 32.4229 25.5234 31.7109 25.5234Z" fill="#DF393A"/>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </div>
         </div>
       </div>
 
       <div class="header__bottom">
-        <div class="container">
+        <div class="container container--full-width">
           <nav class="nav">
             <ul class="nav__ul">                                                                    
               <li class="nav__li">
@@ -679,7 +687,9 @@
             
             <label class="form__agreement">
               <input type="checkbox" class="form__checkbox" checked>
-              <p class="form__agreement-text">Я соглашаюсь с <a href="#" target="_blank">правилами обработки персональных данных</a> и <a href="#" target="_blank">политикой конфиденциальности</a></p>
+              <p class="form__agreement-text">
+                <span>Я соглашаюсь с <a href="#" target="_blank">правилами обработки персональных данных</a> и <a href="#" target="_blank">политикой конфиденциальности</a></span>
+              </p>
             </label>
           </div>
         </form>
@@ -690,8 +700,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          <a href="/">  
-            <img src="img/logo.svg" alt="nowamebel">
+          <a href="/" class="footer__top-logo">  
+            <img src="img/logo.svg" alt="nowamebel" class="logo">
           </a>
 
           <div class="footer__nav">

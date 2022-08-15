@@ -7,10 +7,19 @@
   
   align-items: center;
 
+  @media (max-width: $breakpoint-md) {
+    background-position: center;
+    min-height: 500px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 75px;
+  }
+
+
   @media (max-width: $breakpoint-xs) {
     background-position: 70%;
     min-height: 350px;
-    margin-top: 55px;
   }
 }
 

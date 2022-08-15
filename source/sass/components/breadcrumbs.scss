@@ -8,6 +8,10 @@
   &_bg_gray {
     background-color: $graybg;
   }
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: 75px;
+  }
 }
 
 .breadcrumbs__list {

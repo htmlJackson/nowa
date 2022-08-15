@@ -26,7 +26,7 @@
       <div class="header__top">
         <div class="container header__container">
           <a href="/">  
-            <img src="img/logo.svg" alt="nowamebel">
+            <img src="img/logo.svg" alt="nowamebel" class="logo">
           </a>
 
           <div class="header__right">
@@ -446,7 +446,9 @@
             
             <label class="form__agreement">
               <input type="checkbox" class="form__checkbox" checked>
-              <p class="form__agreement-text">Я соглашаюсь с <a href="#" target="_blank">правилами обработки персональных данных</a> и <a href="#" target="_blank">политикой конфиденциальности</a></p>
+              <p class="form__agreement-text">
+                <span>Я соглашаюсь с <a href="#" target="_blank">правилами обработки персональных данных</a> и <a href="#" target="_blank">политикой конфиденциальности</a></span>
+              </p>
             </label>
           </div>
         </form>
@@ -509,114 +511,235 @@
           <h2 class="h2">
             Новинки
           </h2>
-          <div class="cards-list cards-list_grid">
-            <article class="card">
-              <div class="card__content">
-                <img src="img/card.jpg" alt="">
-                <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
-                <p class="card__art">Артикул: 2340д</p>
-                <p class="card__price">от 29 785₽</p>
-                <div class="reviews">
-                  <div class="reviews__stars">
-                    <img src="img/star-full.svg"  alt="stars">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-empty.svg" alt="">
+          <div class="cards-list swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="reviews__anchor" target="_blank">
-                    <span class="reviews__counter">3</span>
-                    <span class="reviews__text">отзыва</span>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="card__hidden-block">
-                <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card__content">
-                <img src="img/card.jpg" alt="">
-                <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
-                <p class="card__art">Артикул: 2340д</p>
-                <p class="card__price">от 29 785₽</p>
-                <div class="reviews">
-                  <div class="reviews__stars">
-                    <img src="img/star-full.svg"  alt="stars">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-empty.svg" alt="">
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
                   </div>
-                  <a href="#" class="reviews__anchor" target="_blank">
-                    <span class="reviews__counter">3</span>
-                    <span class="reviews__text">отзыва</span>
-                  </a>
-                </div>
+                </article>
               </div>
-
-
-              <div class="card__hidden-block">
-                <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card__content">
-                <img src="img/card.jpg" alt="">
-                <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
-                <p class="card__art">Артикул: 2340д</p>
-                <p class="card__price">от 29 785₽</p>
-                <div class="reviews">
-                  <div class="reviews__stars">
-                    <img src="img/star-full.svg"  alt="stars">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-empty.svg" alt="">
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="reviews__anchor" target="_blank">
-                    <span class="reviews__counter">3</span>
-                    <span class="reviews__text">отзыва</span>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="card__hidden-block">
-                <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card__content">
-                <img src="img/card.jpg" alt="">
-                <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
-                <p class="card__art">Артикул: 2340д</p>
-                <p class="card__price">от 29 785₽</p>
-                <div class="reviews">
-                  <div class="reviews__stars">
-                    <img src="img/star-full.svg"  alt="stars">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-full.svg"  alt="">
-                    <img src="img/star-empty.svg" alt="">
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
                   </div>
-                  <a href="#" class="reviews__anchor" target="_blank">
-                    <span class="reviews__counter">3</span>
-                    <span class="reviews__text">отзыва</span>
-                  </a>
-                </div>
+                </article>
               </div>
-
-
-              <div class="card__hidden-block">
-                <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
               </div>
-            </article>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card">
+                  <div class="card__content">
+                    <img src="img/card.jpg" alt="">
+                    <h4 class="h4 card__name">Кровать Белладжио де Мия</h4>
+                    <p class="card__art">Артикул: 2340д</p>
+                    <p class="card__price">от 29 785₽</p>
+                    <div class="reviews">
+                      <div class="reviews__stars">
+                        <img src="img/star-full.svg"  alt="stars">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-full.svg"  alt="">
+                        <img src="img/star-empty.svg" alt="">
+                      </div>
+                      <a href="#" class="reviews__anchor" target="_blank">
+                        <span class="reviews__counter">3</span>
+                        <span class="reviews__text">отзыва</span>
+                      </a>
+                    </div>
+                  </div>
+    
+    
+                  <div class="card__hidden-block">
+                    <a href="#" class="btn btn_view_outline card__btn" target="_blank">Заказать</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button class="cards-list__nav swiper-button-prev" type="button"></button>
+            <button class="cards-list__nav swiper-button-next" type="button"></button>
           </div>
         </div>
       </section>
@@ -707,7 +830,7 @@
       <div class="container">
         <div class="footer__top">
           <a href="/" class="footer__top-logo">  
-            <img src="img/logo.svg" alt="nowamebel">
+            <img src="img/logo.svg" alt="nowamebel" class="logo">
           </a>
 
           <div class="footer__nav">

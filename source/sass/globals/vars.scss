@@ -1,13 +1,13 @@
 $container: 1600px;
 $container-md: 1280px;
 $container-sm: 768px;
-$container-xsm: 375px;
+$container-xs: 375px;
 
 $breakpoint-md: $container - 1px; // 1599px
 $breakpoint-sm: $container-md - 1px; // 1279px
 $breakpoint-xsm: 1024px - 1px; // 1023px
 $breakpoint-xs: $container-sm - 1px; // 767px
-$breakpoint-xxs: $container-xsm - 1px; // 374px
+$breakpoint-xxs: $container-xs - 1px; // 374px
 
 
 $light: #DFE4E0;

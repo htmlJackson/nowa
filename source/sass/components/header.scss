@@ -1,11 +1,13 @@
 .header {
+
   @media (max-width: $breakpoint-sm) {
-    position: absolute;
-    width: 100%;
+    position: fixed;
     top: 0;
+    background: $white;
     z-index: 3;
-    background-color: $white;
+    width: 100%;
   }
+
 }
 
 .header__top {
@@ -13,9 +15,11 @@
   border-bottom: 1px solid $light;
   padding-bottom: 25px;
 
-  @media (max-width: $breakpoint-xs) {
-    padding-top: 10px;
-    padding-bottom: 5px;
+  @media (max-width: $breakpoint-sm) {
+    height: 75px;
+    display: flex;
+    padding: 0;
+    align-items: center;
   }
 }
 
@@ -98,6 +102,10 @@
 
 .header--opened .nav {
   display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  background-color: $white;
 }
 
 .header--nojs .header__nav {

@@ -20,7 +20,14 @@
   }
 
   @media (max-width: $breakpoint-xs) {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -33,12 +40,15 @@
   font-size: 18px;
   line-height: 24px;
 
+  @media (max-width: $breakpoint-sm) {
+    width: 100px;
+    text-align: center;
+  }
+
   @media (max-width: $breakpoint-xs) {
     font-size: 16px;
-    text-decoration: underline;
-    color: $red;
-    width: 130px;
-    margin-bottom: 35px;
+    width: 100%;
+    padding: 0 15px;
   }
 
   &:hover {

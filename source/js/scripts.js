@@ -1,5 +1,31 @@
 
+const tabletMedia = 768;
+const laptopMedia = 1280;
+const desktopMedia = 1600;
 
+const breakpointsSlider = {
+  768: {
+    slidesPerView: 2
+  },
+  1280: {
+    slidesPerView: 3
+  },
+  1600: {
+    slidesPerView: 4
+  },
+};
+
+const breakpointsRails = {
+  768: {
+    slidesPerView: 2
+  },
+  1280: {
+    slidesPerView: 4
+  },
+  1600: {
+    slidesPerView: 5
+  },
+};
 
 const swiper = new Swiper('.friends__slider.swiper', {
   slidesPerView: 1,
@@ -7,11 +33,7 @@ const swiper = new Swiper('.friends__slider.swiper', {
     el: ".friends__slider .swiper-pagination",
     clickable: true,
   },
-  breakpoints: {
-    767: {
-      slidesPerView: 4
-    },
-  }
+  breakpoints: breakpointsSlider,
 });
 
 const swiper2 = new Swiper('.cards-list.swiper', {
@@ -20,19 +42,16 @@ const swiper2 = new Swiper('.cards-list.swiper', {
     nextEl: '.cards-list .swiper-button-next',
     prevEl: '.cards-list .swiper-button-prev',
   },
-  breakpoints: {
-    767: {
-      slidesPerView: 4
-    },
-  }
+  breakpoints: breakpointsSlider,
 });
 
 const swiper3 = new Swiper('.rails__slider.swiper', {
-  slidesPerView: 5,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.rails__slider .swiper-button-next',
     prevEl: '.rails__slider .swiper-button-prev',
   },
+  breakpoints: breakpointsRails,
 });
 
 const thumbsSwiper4 = new Swiper(".product__thumbs.swiper", {
@@ -40,6 +59,17 @@ const thumbsSwiper4 = new Swiper(".product__thumbs.swiper", {
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 6
+    },
+    // 1280: {
+    //   slidesPerView: 4
+    // },
+    // 1600: {
+    //   slidesPerView: 5
+    // },
+  }
 });
 
 const swiper4 = new Swiper('.product__slider.swiper', {
